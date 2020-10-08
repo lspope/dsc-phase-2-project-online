@@ -74,7 +74,7 @@ The analysis leads to the following conclusions/recommendations around the home 
 
 Futher analysis into the following areas could yield additional insights.
 
-* __Validate Waterfront NAN values__  I did a quick search for free APIs that would allow me to check the distance from lat/long coordinates to the nearest coastline. I did find a for-fee API. It would be interesting to check the waterfront UNKNOWNS/NANS.
+* __Validate Waterfront NAN values__  I did a quick search for free APIs that would allow me to check the distance from lat/long coordinates to the nearest coastline. I did find a for-fee API [KB Geo's Distance to Coast Web Service](https://www.kbgeo.com/). It might be interesting to check the waterfront UNKNOWNS/NANS.
 
 * __Future2__  Blah blah blah
 

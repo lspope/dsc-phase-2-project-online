@@ -14,7 +14,7 @@ Presentation Video URL: [here](thevidlink_tbd)
 
 # Introduction
 
-The goal of this project is to predict housing prices in King County, a county in Washington state. I used multiple linear regression modeling to perform analysis on the provided dataset, kc_house_data.csv. I specifically wanted to explore X, Y, and Z.
+The goal of this project is to answer questions about housing in King County, a county in Washington state. The main question to answer is can we predict housing prices in King County using the given dataset. I used multiple linear regression modeling to perform analysis on the provided dataset, kc_house_data.csv. I specifically wanted to explore X, Y, and Z.
 
 
 # Data Description
@@ -74,10 +74,18 @@ The analysis leads to the following conclusions/recommendations around the home 
 
 Futher analysis into the following areas could yield additional insights.
 
-* __Validate Waterfront NAN values__  I did a quick search for free APIs that would allow me to check the distance from lat/long coordinates to the nearest coastline. I did find a for-fee API [KB Geo's Distance to Coast Web Service](https://www.kbgeo.com/). It might be interesting to check the waterfront UNKNOWNS/NANS.
+* __Validate Waterfront NAN values__  I did a quick search for free APIs that would allow me to check the distance from lat/long coordinates to the nearest coastline. I did find a for-fee API [KB Geo's Distance to Coast Web Service](https://www.kbgeo.com/). It might be interesting/valuable to reverse geocode the lat/long of homes with Unknown/nan  __waterfront__  values and see if  any of them are actually waterfront properties.
 
-* __Future2__  Blah blah blah
+* __Consider questions that county gov might ask__  I used the persona of "Scenic Home Buyers" to frame my stakeholder questions. A great future work idea is to use personas of King County government officals to frame stakeholder questions. I'm thinking specifically of Residential property tax assessors and county/city planning officals that want to learn about economic factors/data related to Residential property. Here are some example question I would like to explore:
+    * Does my zip code price out residents? Does the city/county need to work on making homes more affordable?
+    * Are lots too small/overcrowding/stressing infrastucture? Are there differences in lot size between zip codes?
+    * Are the homes good quality/newer/renovated if older. Are there differences between zip codes in home quality?
+    * What percentage of homes are being renovated? What types of homes (large/small/historic/older) are being renovated?
+    * For property tax assessment purposes, exploring home living area and lot compared to neighbors. Are homes that are larger than neigbhoring homes getting a 'tax break' in being comparied to smaller properties?
 
+*__Additional Scenic Home questions__ I would like to explore if there are differences between scenic homes and neighboring homes.
+    * living area and lot size of scenic homes with their 15 nearest neighboring homes (_sqft_living15_ and _sqft_lot15_)
+    * grade/condition of scenic homes with other homes in same zipcode
 
 
 # For More Information

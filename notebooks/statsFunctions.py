@@ -1,9 +1,14 @@
 import pandas as pd
 import numpy as np 
+
 import statsmodels.api as sm
 import scipy.stats as sps
+
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.linear_model import LinearRegression
+
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Create a function to build a statsmodels ols model
 def build_sm_ols(df, features_to_use, target, add_constant=False, show_summary=True):
@@ -67,8 +72,6 @@ def check_vif_feature_space(df, features_to_use, vif_threshold=3.0):
             print(f"{target_feature} surpassed threshold with vif={vif}")
             all_good_vif = False
     return all_good_vif
-        
-        
 
 
 def check_model(df, 
@@ -95,3 +98,30 @@ def check_model(df,
     if not resids_are_norm or not resids_are_homo:
         print("Residuals failed test/tests")
     return ols
+
+
+
+def plot_residuals(ols):
+    residuals = ols.resid
+    plt.figure(figsize=(8,5))
+    plt.title("Residuals Distribution")
+    sns.distplot(residuals)
+    plt.show()
+    plt.figure()
+    x_axis = np.linspace(0, 1, len(residuals))
+    plt.scatter(x_axis, residuals)
+    plt.show()
+
+    
+
+def make_sklearn_ols(df,
+                     features_to_use,
+                     target,
+                     fit_intercept=False,
+                     test_size=0.20,
+                     print_score=True):
+    pass
+
+
+
+

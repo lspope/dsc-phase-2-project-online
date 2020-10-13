@@ -95,8 +95,10 @@ def check_model(df,
     resids_are_norm = check_residuals_normal(ols)
     resids_are_homo = check_residuals_homoskedasticity(ols)
     
-    if not resids_are_norm or not resids_are_homo:
-        print("Residuals failed test/tests")
+    if not resids_are_norm:
+        print("Residuals failed normality test")
+    if not resids_are_homo:
+        print("Residuals failed homoskedasticity test")
     return ols
 
 
@@ -104,14 +106,15 @@ def check_model(df,
 def plot_residuals(ols):
     residuals = ols.resid
     plt.figure(figsize=(8,5))
-    plt.title("Residuals Distribution")
+    plt.title('Residuals Distribution')
     sns.distplot(residuals)
     plt.show()
     plt.figure()
     x_axis = np.linspace(0, 1, len(residuals))
     plt.scatter(x_axis, residuals)
+    plt.title('Residuals')
     plt.show()
-
+    
     
 
 def make_sklearn_ols(df,

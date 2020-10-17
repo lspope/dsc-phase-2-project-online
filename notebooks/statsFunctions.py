@@ -10,6 +10,28 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+# Find features based on their correlation scores
+def get_columns_correlations(df, target):
+    columns_correlations = []
+    columns_non_numeric = []
+    
+    for column in df.drop(columns=[target]).columns:
+        try:
+            # using .corr on each column to the target
+            corr = np.abs(df[column].corr(df[target]))
+            t = (column, corr)
+            columns_correlations.append(t)
+        except:
+            columns_non_numeric.append(column)
+    return columns_correlations
+
+
+def get_columns_correlations_above_threshold(all_col_corrs, thresh=0.20):
+    correlated_features_above_2 = [t[0] for t in all_col_corrs if t[1] >= thresh]
+    return correlated_features_above_2
+
+
 # Create a function to build a statsmodels ols model
 def build_sm_ols(df, features_to_use, target, add_constant=False, show_summary=True):
     X = df[features_to_use]
@@ -96,9 +118,9 @@ def check_model(df,
     resids_are_homo = check_residuals_homoskedasticity(ols)
     
     if not resids_are_norm:
-        print("Residuals failed normality test")
+        print("Residuals failed normality test using Shaprio Test")
     if not resids_are_homo:
-        print("Residuals failed homoskedasticity test")
+        print("Residuals failed homoskedasticity test using the Breusch Pagan Test")
     return ols
 
 
@@ -112,9 +134,8 @@ def plot_residuals(ols):
     plt.figure()
     x_axis = np.linspace(0, 1, len(residuals))
     plt.scatter(x_axis, residuals)
-    plt.title('Residuals')
+    plt.title('Residuals and Baseline')
     plt.show()
-    
     
 
 def make_sklearn_ols(df,

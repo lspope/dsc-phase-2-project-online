@@ -4,7 +4,7 @@
 
 Prepared and presented by: Leah Pope (full time Data Science student)
 
-Presentation URL: [here](thepdflink_tdb)
+Presentation URL: [here](PhaseTwoProject_LeahPope.pdf)
 
 Presentation Video URL: [here](thevidlink_tbd)
 
@@ -18,33 +18,30 @@ The goal of this project is to answer questions about housing in King County, a 
 * where to find scenic homes in King County
 * what home prices could look like in the near future
 
-I used multiple linear regression modeling to perform analysis on the provided dataset, kc_house_data.csv. I specifically wanted to explore X, Y, and Z.
-
 
 # Data Description
 
 Data Set Used:
-
 * kc_house_data.csv
     * Contains 2015-2015 Housing Sales data for King County, ~20,000 records.
 
 
 # EDA Questions Explored
-## Question 1: Where are scenic homes located (geographically and zipcode)
-### [Notebook](./notebooks/general_eda.ipynb)
+### Question 1: Where are scenic homes located (geographically and zipcode)
+#### [Notebook](./notebooks/general_eda.ipynb)
 
 
-## Question 2: What Types of scenic homes are in King County? 
-### [Notebook](./notebooks/general_eda.ipynb)
+### Question 2: What Types of scenic homes are in King County? 
+#### [Notebook](./notebooks/general_eda.ipynb)
 
 
-## Question 3: Is there a difference in Price between Regular and Scenic homes?
-### [Notebook](./notebooks/general_eda.ipynb)
+### Question 3: Is there a difference in Price between Regular and Scenic homes?
+#### [Notebook](./notebooks/general_eda.ipynb)
 
 
 # Modeling
-## Can we predict price using this dataset?
-### [Notebook](./notebooks/final_modeling.ipynb)
+### Can we predict price using this dataset?
+#### [Notebook](./notebooks/final_modeling.ipynb)
 
 
 
@@ -68,7 +65,7 @@ Futher analysis into the following areas could yield additional insights.
 
 # For More Information
 * Review the non-technical presentation [here](link
-* View the non-technical presentation video [here](link)
+* View the non-technical presentation video [here](PhaseTwoProject_LeahPope.pdf)
 * Read the blog post (TBD) [here](link)
 * Contact the author [Leah Pope](https://www.linkedin.com/in/leahspope/)
 

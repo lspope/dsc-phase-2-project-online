@@ -8,7 +8,7 @@ Prepared and presented by: [Leah Pope](https://www.linkedin.com/in/leahspope/) (
 
 Presentation: [here](PhaseTwoProject_LeahPope.pdf)
 
-Presentation Video: [here](https://drive.google.com/file/d/1RTQGUInYbLNbz-z9ZAe-qhua7j3OvF_Q/view?usp=sharing)
+Presentation Video: [here](https://drive.google.com/file/d/1-6OtBfUHj1wptnknpKEj-pL8hFcajTVa/view?usp=sharing)
 
 ![king_county_map](images/KC_simplemap_Oct2013.jpg)
 

@@ -1,12 +1,14 @@
 # Multiple Linear Regression Modeling for King County Home Prices
 
-<p>Phase 2 Project for Flatiron Online Data Science Bootcamp 
+## Phase 2 Project
+### Flatiron Online Data Science Bootcamp
 
-Prepared and presented by: Leah Pope (full time Data Science student)
 
-Presentation URL: [here](PhaseTwoProject_LeahPope.pdf)
+Prepared and presented by: [Leah Pope](https://www.linkedin.com/in/leahspope/) (full time Data Science student)
 
-Presentation Video URL: [here](thevidlink_tbd)
+Presentation: [here](PhaseTwoProject_LeahPope.pdf)
+
+Presentation Video: [here](https://drive.google.com/file/d/1RTQGUInYbLNbz-z9ZAe-qhua7j3OvF_Q/view?usp=sharing)
 
 ![king_county_map](images/KC_simplemap_Oct2013.jpg)
 
@@ -56,7 +58,7 @@ Futher analysis into the following areas could yield additional insights.
 
 * __Model for each County Subregion__ I found a resource that listed 22 Subregions for King County, with title indicating a mix of Urban and Rural areas. I would like to create models for each Subregion instead of a single model trying to predict across a wide range of residential areas.
 
-*__Additional Scenic Home questions__ I would like to explore if there are differences between scenic homes and neighboring homes.
+* __Additional Scenic Home questions__ I would like to explore if there are differences between scenic homes and neighboring homes.
     * living area and lot size of scenic homes with their 15 nearest neighboring homes (_sqft_living15_ and _sqft_lot15_)
     * grade/condition of scenic homes with other homes in same zipcode
 
@@ -64,7 +66,7 @@ Futher analysis into the following areas could yield additional insights.
 
 
 # For More Information
-* Review the non-technical presentation [here](link
+* Review the non-technical presentation [here](https://drive.google.com/file/d/1RTQGUInYbLNbz-z9ZAe-qhua7j3OvF_Q/view?usp=sharing)
 * View the non-technical presentation video [here](PhaseTwoProject_LeahPope.pdf)
 * Read the blog post (TBD) [here](link)
 * Contact the author [Leah Pope](https://www.linkedin.com/in/leahspope/)
